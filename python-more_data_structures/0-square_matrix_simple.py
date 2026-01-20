@@ -6,4 +6,4 @@ def square_matrix_simple(matrix=[]):
         for integers in row:
             square.append(integers ** 2)
         new_matrix.append(square)
-        return new_matrix
+    return new_matrix
