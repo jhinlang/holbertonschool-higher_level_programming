@@ -6,11 +6,12 @@ and a method to print the square using '#' characters.
 
 
 class Square:
-     """
+    """
     Represents a square with size validation, area calculation, and printing.
     Attributes:
         __size (int): The size of the square.
     """
+
     def __init__(self, size=0):
         self.size = size 
 
@@ -37,6 +38,5 @@ class Square:
         if self.__size == 0:
             print()
         else:
-        for i in range(0, self.__size):
+            for i in range(0, self.__size):
             print("#" * self.__size)
-        print()
