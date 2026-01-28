@@ -13,7 +13,7 @@ class Square:
     """
 
     def __init__(self, size=0):
-        self.size = size 
+        self.size = size
 
     @property
     def size(self):
@@ -39,4 +39,4 @@ class Square:
             print()
         else:
             for i in range(0, self.__size):
-            print("#" * self.__size)
+                print("#" * self.__size)
