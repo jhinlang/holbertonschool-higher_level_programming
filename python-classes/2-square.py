@@ -5,7 +5,11 @@ Module defining a Square Class
 
 
 class Square:
-    '''Class that defines a square'''
+   '''
+    Represents a square with size validation.
+    Attributes:
+        __size (int): The size of the square.
+    '''
 
     def __init__(self, size=0):
         '''
@@ -13,8 +17,11 @@ class Square:
 
         Args:
             size (int): The size of the square
+            Raises:
+                TypeError: If size is not an integer.
+                ValueError: If size is negative.
         '''
-        
+
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
 
