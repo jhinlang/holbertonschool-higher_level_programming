@@ -22,6 +22,15 @@ class Square:
             size (int, optional): The size of the square. Defaults to 0.
         """
         self.size = size
+
+     def area(self):
+        """Return the area of the square.
+
+        Returns:
+            int: The current area of the square.
+        """
+        return self.__size ** 2
+
     @property
     def size(self):
         """int: Retrieves the size of the square."""
@@ -45,11 +54,3 @@ class Square:
             raise ValueError("size must be >= 0")
 
         self.__size = value
-
-    def area(self):
-        """Return the area of the square.
-
-        Returns:
-            int: The current area of the square.
-        """
-        return self.__size ** 2
