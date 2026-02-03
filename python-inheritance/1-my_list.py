@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""Module that defines a MyList class inheriting from list"""
+
+
 class MyList(list):
     """A class that inherits from list and has a method to print the list in sorted order."""
 
