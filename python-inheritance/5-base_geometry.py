@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module  docstring for a BaseGeometry python-inheritance.5-base_geometry"""
+"""Module docstring for python-inheritance.5-base_geometry"""
 
 
 class BaseGeometry:
