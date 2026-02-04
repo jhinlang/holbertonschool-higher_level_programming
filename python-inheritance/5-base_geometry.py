@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that defines a BaseGeometry class with an area method"""
+"""Module that defines a BaseGeometry python-inheritance.5-base_geometry"""
 
 
 class BaseGeometry:
