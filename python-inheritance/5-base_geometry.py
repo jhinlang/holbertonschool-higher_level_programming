@@ -3,6 +3,8 @@
 
 
 class BaseGeometry:
-    """A base class for geometry-related classes."""
+    """
+    A base class for geometry-related classes.
+    """
     pass
     
