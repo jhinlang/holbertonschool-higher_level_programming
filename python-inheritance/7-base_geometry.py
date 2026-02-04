@@ -1,31 +1,30 @@
 #!/usr/bin/python3
-"""module docstring for python-inheritance.7-base_geometry"""
+"""
+Module that defines a BaseGeometry class.
+"""
 
 
 class BaseGeometry:
-    """
-    Class BaseGeometry.
-    """
+    """BaseGeometry class."""
 
     def area(self):
         """
-        raises an Exception with the message area() is not implemented
+        Raises an exception indicating that the area method
+        is not implemented.
         """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
         """
-        validates that value is a positive integer.
-
+        Validate that value is a positive integer.
         Args:
-            name (str): name of value to validate
-            value (int): value to validate
-
+            name (str): The name of the parameter.
+            value (int): The value to validate.
         Raises:
-            TypeError: if type(value) is not int
-            ValueError: if value <= 0
+            TypeError: If value is not an integer.
+            ValueError: If value is less than or equal to 0.
         """
-        if type(value) is not int:
+        if not isinstance(value, int):
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
