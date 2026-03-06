@@ -1,1 +1,0 @@
-This directory is dedicated to learn about ibject relationnal mapping and SQLAlchemy
