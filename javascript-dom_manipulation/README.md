@@ -1,0 +1,1 @@
+This directory is dedicated explore deeper js and manipulate DOM
