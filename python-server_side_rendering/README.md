@@ -1,0 +1,1 @@
+This directory is dedicated to learn about Server Side Rendering
