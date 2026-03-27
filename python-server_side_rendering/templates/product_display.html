@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Products - My Flask App{% endblock %}
+
+{% block content %}
+<h1>Products</h1>
+
+{% if error %}
+    <p style="color: red; font-weight: bold;">{{ error }}</p>
+{% elif products %}
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+                <tr>
+                    <td>{{ product.id }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.category }}</td>
+                    <td>${{ "%.2f"|format(product.price|float) }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No products found</p>
+{% endif %}
+
+{% endblock %}
